@@ -1,19 +1,19 @@
 class Wsp < Formula
   desc "Multi-repo workspace manager using local git clones"
   homepage "https://github.com/jganoff/wsp"
-  version "0.5.0"
+  version "0.5.1"
   if OS.mac? && Hardware::CPU.arm?
-      url "https://github.com/jganoff/wsp/releases/download/v0.5.0/wsp-aarch64-apple-darwin.tar.xz"
-      sha256 "842cc1bf3007abace57d57bb2e654f90ff3511503937a0ef84e0cef0fd98d272"
+      url "https://github.com/jganoff/wsp/releases/download/v0.5.1/wsp-aarch64-apple-darwin.tar.xz"
+      sha256 "ea389be3a651b8f3aea3fe3af81af8b359cc342dee85f6553c01d0d218315155"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jganoff/wsp/releases/download/v0.5.0/wsp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "52be00fc1be4f873f2ec584ed462a768b3b8761f4d5dc29e63edf534d14dfd22"
+      url "https://github.com/jganoff/wsp/releases/download/v0.5.1/wsp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2f1733e3e61c1358fe160e7e134f67a286826be1789a9e7c866da97311ca019c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jganoff/wsp/releases/download/v0.5.0/wsp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "68ea82e85d7fbaad12be82f2a1d19adb348c1ef7fc46ced923d7b4265c061237"
+      url "https://github.com/jganoff/wsp/releases/download/v0.5.1/wsp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c95f142354c02391b6bd5ea9366a09a53c15a7a7e8e863088be7314d909f22cb"
     end
   end
   license "MIT"
